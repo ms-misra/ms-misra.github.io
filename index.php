@@ -30,7 +30,7 @@
        <?php
        $query = "SELECT * FROM Users";
        $result = mysqli_query($db, $query);
-       $row = mysqli_fetch_array($result);
+       //$row = mysqli_fetch_array($result);
        while ($row = mysqli_fetch_array($result)) 
        {
             echo "<tr>";
