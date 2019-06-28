@@ -46,11 +46,11 @@ else
 <body>
         <header>
                  <h1> CREDIT MANAGEMENT </h1>
-                 <nav>
+        </header> 
+	<nav>
                         <a href="index.php" class="active" > USERS INFO </a>
                         <a href="transaction.php"> TRANSFERS </a>
-                 </nav>
-       </header>
-                 <p> Proceed to transfers.</p>
+        </nav>
+        <p> Proceed to transfers.</p>
 <body>
 </html>
