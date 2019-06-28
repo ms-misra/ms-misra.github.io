@@ -12,11 +12,12 @@
 <body>
        <header>
                 <h1> CREDIT MANAGEMENT- HOME PAGE </h1>
+       </header>
                 <nav>
                          <a href="index.php" class="active" > USERS INFO </a>
                          <a href="transaction.php"> TRANSFERS </a>
 	        </nav>
-	</header>
+	
         <p> This is a dynamic website which transfers credits between two users. </p>
     
         <main>
