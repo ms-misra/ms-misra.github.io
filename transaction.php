@@ -12,12 +12,12 @@
 <body>
         <header>
                    <h1> CREDIT MANAGEMENT </h1>
+	</header>
                    <nav>
                            <a href="index.php"> USERS INFO </a>
                            <a href="transaction.php" class="active"> TRANSFERS </a>
 
                   </nav>
-        </header>
                   <p> This views all the transactions done so far. </p>
         <main>
                   <table>
