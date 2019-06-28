@@ -9,14 +9,24 @@ $credits_tr=filter_input(INPUT_POST,'Credits');
 $curent_cr="select * from Users where name='" . $from_user . "'";
 $result = mysqli_query($db, $current_cr);
 $row=mysqli_fetch_array($result);
-
-if($credits_tr > $row["CREDITS"])
+$flag=0;
+$check=mysqli_query($db,"select * from Users");
+while($checklist=mysqli_fetch_array($check))
+     {
+            if(($from_user == $checklist["NAME"]) || ($to_user == $checklist["NAME"]))
+                   $flag+=1;
+     }
+if($flag < 2)
+     {
+	    echo "ERROR:Enter valid username." . "<br/>";
+     }
+else if($credits_tr > $row["CREDITS"])
      {
             echo "ERROR: Credits transferred cannot be more than user's current credits ."  . "<br>";
             
      }
 else 
-    {
+     {
 	    //updates Users table information and makes an entry in Transfers table.
             $query = "update Users set CREDITS=CREDITS-" . $credits_tr . " where name='" . $from_user . "'";
             $query2= "update Users set CREDITS=CREDITS+" . $credits_tr . " where name='" . $to_user . "'";           
