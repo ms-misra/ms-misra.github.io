@@ -40,8 +40,8 @@
                         mysqli_close($db);
                         ?>
                  <form action="transfer.php" method="post"/>
-                 <p> From_user: <input type="text" name="From_user"/></p>
-                 <p> To_user: <input type="text" name="To_user"/></p>
+                 <p> From user: <input type="text" name="From_user"/></p>
+                 <p> To user: <input type="text" name="To_user"/></p>
                  <p> Credits: <input type="int" name="Credits"/></p>
                  <input type="submit" value="submit"/>
                  </form>
